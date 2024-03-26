@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_eight).setOnClickListener(buttonClickListener);
         findViewById(R.id.btn_nine).setOnClickListener(buttonClickListener);
         findViewById(R.id.btn_decimal).setOnClickListener(buttonClickListener);
-
         findViewById(R.id.btn_add).setOnClickListener(operatorClickListener);
         findViewById(R.id.btn_subtract).setOnClickListener(operatorClickListener);
         findViewById(R.id.btn_multiply).setOnClickListener(operatorClickListener);
