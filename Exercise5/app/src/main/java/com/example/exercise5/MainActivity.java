@@ -28,30 +28,31 @@ public class MainActivity extends AppCompatActivity {
 
         textView = findViewById(R.id.textView);
 
-        findViewById(R.id.btn_zero).setOnClickListener(buttonClickListener);
-        findViewById(R.id.btn_one).setOnClickListener(buttonClickListener);
-        findViewById(R.id.btn_two).setOnClickListener(buttonClickListener);
-        findViewById(R.id.btn_three).setOnClickListener(buttonClickListener);
-        findViewById(R.id.btn_four).setOnClickListener(buttonClickListener);
-        findViewById(R.id.btn_five).setOnClickListener(buttonClickListener);
-        findViewById(R.id.btn_six).setOnClickListener(buttonClickListener);
-        findViewById(R.id.btn_seven).setOnClickListener(buttonClickListener);
-        findViewById(R.id.btn_eight).setOnClickListener(buttonClickListener);
-        findViewById(R.id.btn_nine).setOnClickListener(buttonClickListener);
-        findViewById(R.id.btn_decimal).setOnClickListener(buttonClickListener);
-        findViewById(R.id.btn_add).setOnClickListener(operatorClickListener);
-        findViewById(R.id.btn_subtract).setOnClickListener(operatorClickListener);
-        findViewById(R.id.btn_multiply).setOnClickListener(operatorClickListener);
-        findViewById(R.id.btn_divide).setOnClickListener(operatorClickListener);
+        findViewById(R.id.bt0).setOnClickListener(buttonClickListener);
+        findViewById(R.id.bt1).setOnClickListener(buttonClickListener);
+        findViewById(R.id.bt2).setOnClickListener(buttonClickListener);
+        findViewById(R.id.bt3).setOnClickListener(buttonClickListener);
+        findViewById(R.id.bt4).setOnClickListener(buttonClickListener);
+        findViewById(R.id.bt5).setOnClickListener(buttonClickListener);
+        findViewById(R.id.bt6).setOnClickListener(buttonClickListener);
+        findViewById(R.id.bt7).setOnClickListener(buttonClickListener);
+        findViewById(R.id.bt8).setOnClickListener(buttonClickListener);
+        findViewById(R.id.bt9).setOnClickListener(buttonClickListener);
+        findViewById(R.id.btdec).setOnClickListener(buttonClickListener);
 
-        findViewById(R.id.btn_clear).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btsub).setOnClickListener(operatorClickListener);
+        findViewById(R.id.btmul).setOnClickListener(operatorClickListener);
+        findViewById(R.id.btdiv).setOnClickListener(operatorClickListener);
+        findViewById(R.id.btadd).setOnClickListener(operatorClickListener);
+
+        findViewById(R.id.btclear).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 clear();
             }
         });
 
-        findViewById(R.id.btn_equals).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btequal).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 compute();
